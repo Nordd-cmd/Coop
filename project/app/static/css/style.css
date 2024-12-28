@@ -6,7 +6,7 @@ body{
     justify-content:space-between;
     display:block;
     padding:0 0 20px;
-    color:#fff;
+
     font-size:16px;
     line-height:16px;
     font-weight:700;
@@ -15,14 +15,16 @@ body{
 
 }
 
-.header{
-    color: orange;
+header{
+    background-color: orange;
     display: flex;
     justify-content: space-between;
     font-weight: 300;
     
 }
 
-.footer{
-    color: orange;
+footer{
+    background-color: orange;
+    
+
 }
