@@ -13,7 +13,7 @@ class DetailListView(DetailView):
 
 class CreateListView(CreateView):
     model = Book
-    template_name = 'create_book.html'
+    template_name = 'form.html'
     fields = '__all__'
 
     def get_success_url(self):
@@ -21,7 +21,7 @@ class CreateListView(CreateView):
 
 class UpdateListView(UpdateView):
     model = Book
-    template_name = 'update_book.html'
+    template_name = 'update.html'
     fields = '__all__'
 
     def get_success_url(self):
@@ -29,7 +29,7 @@ class UpdateListView(UpdateView):
 
 class DeleteListView(DeleteView):
     queryset = Book.objects.all()
-    template_name = 'book_confirm.html'
+    template_name = 'delete.html'
 
     def get_success_url(self):
         return reverse('main')
