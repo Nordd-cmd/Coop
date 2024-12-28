@@ -14,16 +14,17 @@
 
     {% for product in object_list %}
 
-    {{ product.title }}
-    {{ product.number }}
-    {{ product.creator }}
-    {{ product.about }}
-    {{ product.price }}
-
+    <p>{{ product.title }}</p>
+    <p>{{ product.number }}</p>
+    <p>{{ product.creator }}</p>
+    <p>{{ product.about }}</p>
+    <p>{{ product.price }}</p>
+    <button><a href="{% url 'delete' product.pk %}">Удалить</a></button>
+    <hr>
     {% endfor %}
 
     <footer>
-        <p>&copy; 2023 DNS Сервис. Все права защищены.</p>
+        <p>2024 DNS Сервис. Все права защищены.</p>
     </footer>
 </body>
 </html>
